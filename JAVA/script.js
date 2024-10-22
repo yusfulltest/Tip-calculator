@@ -18,7 +18,7 @@ const calclateTips = function () {
     let eachPerson = mainScreen.value / people.value;
     tip.textContent = Math.round((custom.value / 100) * eachPerson);
 
-    total.textContent = +tip.textContent + eachPerson;
+    total.textContent = Math.round(+tip.textContent + eachPerson);
   }
 };
 
@@ -38,7 +38,7 @@ percentage.forEach((per) => {
         (per.textContent.slice(0, -1) / 100) * eachPerson
       );
 
-      total.textContent = +tip.textContent + eachPerson;
+      total.textContent = Math.round(+tip.textContent + eachPerson);
     }
   });
 });
