@@ -43,6 +43,13 @@ percentage.forEach((per) => {
   });
 });
 
+// function allowNumbersOnly(event) {
+//   const input = event.target;
+//   const value = input.value;
+
+//   input.value = value.replace(/[^0-9]/g, "");
+// }
+
 //  KEYUP FOR BORDER CHANGES WITH OR WITHOUT VALUE
 customcalc.forEach((press) => {
   press.addEventListener("keyup", function () {
@@ -55,6 +62,9 @@ customcalc.forEach((press) => {
       press.classList.remove("successBorder");
       press.classList.add("errorBorder");
     }
+
+    const notNumber = press.value;
+    press.value = notNumber.replace(/[^0-9]/g, "");
   });
 });
 
