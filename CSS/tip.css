@@ -1,0 +1,177 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.bodyWrap {
+  background: hsl(185, 41%, 84%);
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Space Mono", monospace;
+  overflow-x: hidden;
+}
+
+.spl {
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: hsl(183, 100%, 15%);
+}
+
+.txt {
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  gap: 30px;
+  background: white;
+  border-radius: 15px;
+  width: 700px;
+  height: 380px;
+  margin-top: 40px;
+  padding: 22px;
+}
+
+.screenPage {
+  width: 80%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(183, 100%, 15%);
+}
+
+.icon {
+  width: 0;
+  position: relative;
+  left: 10px;
+  top: 7px;
+  font-size: 24px;
+  color: hsl(184, 14%, 56%);
+}
+
+.icon2 {
+  font-size: 24px;
+  position: relative;
+  left: -0.5px;
+  top: -2px;
+}
+
+.box {
+  height: 50px;
+  border: none;
+  outline: none;
+  background: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+  text-align: end;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.percentage {
+  width: 30%;
+  border: none;
+  padding: 6px;
+  background: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.percentage2 {
+  width: 30%;
+  background: hsl(189, 41%, 97%);
+  color: hsl(186, 14%, 43%);
+  padding: 6px;
+  text-align: end;
+  border-radius: 5px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+.tip {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.each {
+  font-size: 12px;
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+  position: relative;
+  top: -15px;
+}
+
+#tipAmount,
+#total {
+  font-size: 24px;
+  color: #26c0ab;
+  font-weight: 700;
+}
+
+#reset {
+  background: hsl(180, 85%, 29%);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 5px;
+  color: hsl(184, 69%, 28%);
+  margin-top: 70px;
+}
+
+.active {
+  background: #7afff0d3;
+  color: black;
+}
+.errorBorder {
+  border: solid red 2px;
+}
+.successBorder {
+  border: solid hsl(180, 85%, 29%) 2px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media (max-width: 730px) {
+  .calculator {
+    display: unset;
+  }
+
+  form {
+    height: unset;
+    width: 380px;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .calculator {
+    padding-top: 50px;
+  }
+
+  .inputPage,
+  .screenPage {
+    width: 100% !important;
+  }
+  #reset {
+    margin-top: 10px;
+  }
+
+  .percentage,
+  .percentage2 {
+    width: 47%;
+    height: 42px;
+    padding-top: 8px;
+  }
+}
